@@ -1,1 +1,13 @@
+Things To do on the data set
+http://insideairbnb.com/get-the-data.html
+
+
+data = pd.read_csv("/Users/ksomes/Downloads/listings.csv")
+sub=data.drop(['id','listing_url','scrape_id','last_scraped','summary','space','description','experiences_offered'
+              , 'neighborhood_overview', 'notes', 'transit', 'access', 'interaction', 'house_rules',
+              'thumbnail_url', 'medium_url', 'picture_url', 'xl_picture_url', 'host_url', 'host_thumbnail_url',
+              'host_picture_url', 'country_code', 'country','amenities', 'minimum_minimum_nights',
+              'maximum_minimum_nights','minimum_maximum_nights', 'maximum_maximum_nights','minimum_nights_avg_ntm',
+              'maximum_nights_avg_ntm', 'has_availability', 'is_business_travel_ready'], axis=1)
+print(sub.columns.values)
 
